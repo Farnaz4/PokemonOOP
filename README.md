@@ -1,2 +1,3 @@
 # PokemonOOP
-OOP practice project
+OOP practice project 
+Pokémon 
