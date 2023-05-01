@@ -32,3 +32,5 @@ class PokeType(Enum):
 
     def __gt__(self, other):
         return self.__lt__(other)
+    #return
+
