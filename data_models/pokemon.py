@@ -1,7 +1,9 @@
 #abstract class
+from abc import ABC, abstractmethod
 from typing import List, Tuple
 
-class Pokemon():
+
+class Pokemon(ABC):
     def __init__(self, name: str, pokedexID: str, level: int, attacking_points: int, living_points: int,
                  defence_points: int, attack: List[Tuple[str, int]]) -> None:
 
@@ -15,6 +17,11 @@ class Pokemon():
         self.experience_points: int = 0
         self.fight_status: bool = False
         self.alive: bool = True
+
+
+        @abstractmethod
+        def lvlUp(self) -> Pokemon:
+            pass
 
 
 
